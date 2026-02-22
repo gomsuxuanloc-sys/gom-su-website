@@ -90,18 +90,18 @@
 
         <!-- BÊN TRÁI -->
         <div class="contact-left">
-            <p><strong>Mời Quý khách ghé Tiệm Gốm Việt tại:</strong></p>
+            <p><strong>Mời Quý khách ghé Gốm Sứ Xuân Lộc tại:</strong></p>
 
-            <h3>Tiệm Gốm Việt Hội An</h3>
+            <h3>Tiệm Gốm Sứ Xuân Lộc</h3>
             <ul>
-                <li>135 Cửa Đại, Cẩm Châu, Hội An</li>
-                <li>Điện thoại: 0886 561 079</li>
-                <li>Facebook: Tiệm Gốm Việt</li>
+                <li>Số 9 Chu Văn An, khu 4 Xuân Lộc, Đồng Nai</li>
+                <li>Điện thoại:0357652400 - 0988808049</li>
+                <li>Facebook: Gốm Sứ Xuân </li>
             </ul>
 
-            <h3>Tiệm Gốm Việt Đà Lạt</h3>
+            <h3>Tiệm Chậu Kiểng Long Khanh </h3>
             <ul>
-                <li>20 Lý Nam Đế, Đà Lạt</li>
+                <li></li>
                 <li>Điện thoại: 0886 561 079</li>
             </ul>
         </div>
@@ -122,7 +122,25 @@
                 </select>
 
                 <textarea placeholder="Nội dung"></textarea>
+<div style="margin-bottom:15px;">
+    <input type="checkbox" id="fbCheck">
+    <label for="fbCheck">
+        Tôi muốn xem trang Facebook của Tiệm Gốm Việt
+    </label>
+</div>
 
+<button type="button" onclick="goFacebook()">Xem Facebook</button>
+
+<script>
+function goFacebook(){
+    var check = document.getElementById("fbCheck");
+    if(check.checked){
+        window.open("https://facebook.com/tiemgomviet", "_blank");
+    } else {
+        alert("Vui lòng tick vào ô trước khi xem Facebook.");
+    }
+}
+</script>
                 <button type="submit">Gửi liên hệ</button>
             </form>
         </div>
