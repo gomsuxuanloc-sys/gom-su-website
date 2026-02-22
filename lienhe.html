@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên hệ - Tiệm Gốm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f5f5f5;
+        }
+
+        .container{
+            width: 90%;
+            max-width: 1200px;
+            margin:50px auto;
+        }
+
+        h1{
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .contact-wrapper{
+            display:flex;
+            gap:40px;
+        }
+
+        .contact-left{
+            flex:1;
+        }
+
+        .contact-left h3{
+            margin-top:20px;
+        }
+
+        .contact-left ul{
+            padding-left:20px;
+        }
+
+        .contact-right{
+            flex:1;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea{
+            width:100%;
+            padding:12px;
+            margin-bottom:15px;
+            border:1px solid #ddd;
+            border-radius:4px;
+            font-size:14px;
+        }
+
+        .contact-form textarea{
+            height:120px;
+        }
+
+        .contact-form button{
+            background:#2c9cc3;
+            color:white;
+            padding:12px 20px;
+            border:none;
+            border-radius:4px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        .contact-form button:hover{
+            background:#1f7c9b;
+        }
+
+        @media(max-width:768px){
+            .contact-wrapper{
+                flex-direction:column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>LIÊN HỆ</h1>
+
+    <div class="contact-wrapper">
+
+        <!-- BÊN TRÁI -->
+        <div class="contact-left">
+            <p><strong>Mời Quý khách ghé Tiệm Gốm Việt tại:</strong></p>
+
+            <h3>Tiệm Gốm Việt Hội An</h3>
+            <ul>
+                <li>135 Cửa Đại, Cẩm Châu, Hội An</li>
+                <li>Điện thoại: 0886 561 079</li>
+                <li>Facebook: Tiệm Gốm Việt</li>
+            </ul>
+
+            <h3>Tiệm Gốm Việt Đà Lạt</h3>
+            <ul>
+                <li>20 Lý Nam Đế, Đà Lạt</li>
+                <li>Điện thoại: 0886 561 079</li>
+            </ul>
+        </div>
+
+        <!-- BÊN PHẢI -->
+        <div class="contact-right">
+            <form class="contact-form">
+                <input type="text" placeholder="Họ và tên">
+                <input type="text" placeholder="Địa chỉ">
+                <input type="tel" placeholder="Số điện thoại">
+                <input type="email" placeholder="Email của bạn">
+
+                <select>
+                    <option>Chọn hạng mục</option>
+                    <option>Tư vấn sản phẩm</option>
+                    <option>Hợp tác</option>
+                    <option>Khiếu nại</option>
+                </select>
+
+                <textarea placeholder="Nội dung"></textarea>
+
+                <button type="submit">Gửi liên hệ</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
